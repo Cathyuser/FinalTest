@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AECBD8"
+    tools:context=".ActivitySecond">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="88dp"
+        android:contentDescription="@string/image_of_a_city"
+        app:layout_constraintEnd_toStartOf="@+id/textView_province"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView_city"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/city"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_province"
+        app:layout_constraintStart_toStartOf="@+id/textView_province"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_province"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/province"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_wendu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView_city" />
+
+    <TextView
+        android:id="@+id/textView_wendu"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="63dp"
+        android:text="@string/wendu"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/listview"
+        app:layout_constraintEnd_toStartOf="@+id/textView_shidu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_province" />
+
+    <TextView
+        android:id="@+id/textView_shidu"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/shidu"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/listview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_wendu"
+        app:layout_constraintTop_toTopOf="@+id/textView_province" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_wendu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/game"
+        android:title="@string/menu_game"
+        android:icon="@drawable/ic_baseline_videogame_asset_24"/>
+    <item
+        android:id="@+id/blank"
+        android:icon="@android:drawable/stat_notify_chat"
+        android:title="@string/menu_chat" />
+    <item
+        android:id="@+id/clock"
+        android:icon="@drawable/ic_baseline_av_timer_24"
+        android:title="@string/menu_clock" />
+    <item
+        android:id="@+id/weather"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="@string/menu_weather"
+    />
+    <item
+        android:id="@+id/music"
+        android:icon="@android:drawable/stat_sys_headset"
+        android:title="@string/title_music" />
+</menu>

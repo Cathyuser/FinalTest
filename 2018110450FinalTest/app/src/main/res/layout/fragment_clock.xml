@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C38A9D"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/clock_time"
+        android:textAlignment="center"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#CCAC4D"
+        android:text="@string/clock_start" />
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#349EF3"
+        android:text="@string/clock_stop" />
+
+    <Button
+        android:id="@+id/button_restart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#4CAF50"
+        android:text="@string/clock_restart" />
+</LinearLayout>
